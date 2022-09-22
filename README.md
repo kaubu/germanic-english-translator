@@ -16,3 +16,7 @@ python
 ```
 
 From there, download the "wordnet" corpus.
+
+## Credits
+Heavy credits to the Germanic Thesaurus available
+(here)[https://docs.google.com/spreadsheets/d/1x-GB6AjZu_CYlxTit1n260i6xV9qxZXQk1N9X4oJAPI/edit]
