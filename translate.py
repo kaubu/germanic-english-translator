@@ -5,6 +5,8 @@ import ety
 
 from nltk.stem import WordNetLemmatizer
 
+wordlist_file = "./wordlist.json"
+
 lemmatizer = WordNetLemmatizer()
 
 def find_word_type(word: str):
@@ -32,7 +34,11 @@ def find_related_words(word: str):
 # lemmatizer.lemmatize("rocks")
 
 while True:
-    word = input("Input word: ")
-    words = find_related_words(word)
+    sentence = input("Input sentence: ")
+    words = []
+
+    for word in sentence:
+        for related_words in find_related_words(word):
+            words.append(related_words)
     
-    print(words)
+    # Check if each word is Germanic or not
