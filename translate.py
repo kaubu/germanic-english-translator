@@ -5,6 +5,9 @@ import json
 import nltk
 import ety
 
+# My own personal path, remove if on Linux
+nltk.data.path.append(r"D:\Documents\Coding\DATA\nltk_data")
+
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 

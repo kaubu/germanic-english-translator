@@ -9,13 +9,18 @@ pip install --user -U numpy
 pip install ety
 ```
 
-Install corpora:
-```sh
-python
+Install corpora within Python interactive shell:
+```python
+>>> import nltk
 >>> nltk.download()
 ```
 
 From there, download the "wordnet" corpus.
+
+Also, run this command:
+```python
+>>> nltk.download("punkt")
+```
 
 ## Credits
 Heavy credits to the Germanic Thesaurus available
